@@ -8,8 +8,9 @@ export default function Carousal() {
                 id="carouselExampleFade"
                 className="carousel slide carousel-fade"
                 data-bs-ride="carousel"
+                style={{objectFit:"contain !important"}}
             >
-                <div className="carousel-inner" id="carousal">
+                <div className="carousel-inner" id="carousel">
                     <div className="carousel-caption" style={{ zIndex: "10" }}>
                         <form class="d-flex">
                             <input
@@ -18,7 +19,7 @@ export default function Carousal() {
                                 placeholder="Search"
                                 aria-label="Search"
                             />
-                            <button className="btn btn-outline-success" type="submit">
+                            <button className="btn btn-outline-success text-white bg-success" type="submit">
                                 Search
                             </button>
                         </form>
@@ -28,7 +29,7 @@ export default function Carousal() {
                         <img
                             src="https://source.unsplash.com/random/30×30/?Burger"
                             className="d-block w-100"
-                            style={{ filter: "brightness(30%)" }}
+                            style={{ filter: "brightness(50%)" }}
                             alt="..."
                         />
                     </div>
@@ -36,7 +37,7 @@ export default function Carousal() {
                         <img
                             src="https://source.unsplash.com/random/30×30/?pastry"
                             className="d-block w-100"
-                            style={{ filter: "brightness(30%)" }}
+                            style={{ filter: "brightness(50%)" }}
                             alt="..."
                         />
                     </div>
@@ -44,7 +45,7 @@ export default function Carousal() {
                         <img
                             src="https://source.unsplash.com/random/30×30/?fruits"
                             className="d-block w-100"
-                            style={{ filter: "brightness(30%)" }}
+                            style={{ filter: "brightness(50%)" }}
                             alt="..."
                         />
                     </div>

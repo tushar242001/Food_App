@@ -8,12 +8,17 @@ export default function Card() {
           className="card mt-3"
           style={{ width: "18rem", maxHeight: "360px" }}
         >
-          <img src="..." className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">This is some important</p>
-            <div className="container w-100"></div>
-            <select className="m-2 h-100  bg-success rounded">
+          <img
+            src="https://www.spiceupthecurry.com/wp-content/uploads/2020/09/paneer-tikka-recipe-2.jpg"
+            style={{ width: "18rem",height:"15rem" ,}}
+            className="card-img-top"
+            alt="..."
+          />
+          <div className="card-body ">
+            <h5 className="card-title m-1">Card title</h5>
+            <p className="card-text m-1">This is some important</p>
+            <div className="container m-1 w-100"></div>
+            <select className="m-1 h-100  bg-success rounded">
               {Array.from(Array(6), (e, i) => {
                 return (
                   <option key={i + 1} value={i + 1}>
@@ -22,7 +27,7 @@ export default function Card() {
                 );
               })}
             </select>
-            <select className="m-2 h-100  bg-success rounded">
+            <select className="m-1 h-100  bg-success rounded">
               <option value="half">Half</option>
               <option value="full">full</option>
             </select>
